@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span>D</span>heeraj!</p>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi,I'm <span>Dheeraj Kumar</span><br>Gupta From India</h1>
+            </div>
+        </div>
+    </div>
+   <!----------about-------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/photo.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p>I'm, a dedicated front-end developer with a passion for creating seamless and visually captivating user experiences on the web.I have honed my skills in HTML, CSS, and JavaScript to transform designs into interactive interfaces that leave a lasting impression.My expertise lies in crafting responsive and accessible websites that adapt effortlessly to various screen sizes and devices. From implementing complex user interface(UI) components to optimizing performance for lightning-fast loading times and user experience(UX), I thrive on the challenges that front-end development presents .
+
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interface</li> 
+                            <li><span>Web Devlopment</span><br>Cascadind Style Sheets(CSS)<br>HTML<br>Java Script<br>C(Programming language)</li>
+                            <li><span>Professional Skills</span><br>Communication<br>Problem Solving </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Proficiency in programming languages such as HTML, CSS, JavaScript</li> 
+                            <li><span>Web Devlopment</span><br>frontend  Devlopment</li>
+                            <!-- <li><span>App Devlopment</span><br>Building Android/IOS app</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech</span><br>CSE-IOT|RKGIT</li> 
+                            <li><span>High school(CBSE)</span><br>B.V.M.S | 2018</li>
+                            <li><span>Intermediate(CBSE)</span><br>B.V.M.S | 2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------Services------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing refers to the process of creating the visual and functional elements of a website. It involves a combination of skills and disciplines, including graphic design, user interface (UI) design, user experience (UX) design, and front-end development. Web designers focus on creating websites that are visually appealing, easy to navigate, and user-friendly.</p>
+                    <a href="#">learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX (User Experience) and UI (User Interface) are two closely related but distinct disciplines in the field of design, particularly in the context of digital products like websites, mobile apps, and software applications.
+
+                    </p>
+                    <a href="#">learn maore</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        App designing refers to the process of creating the visual and interactive elements of a mobile application. It involves a combination of skills and disciplines, including user interface (UI) design, user experience (UX) design, graphic design, and front-end development</p>
+                    <a href="#">learn maore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------portfolio----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Tic Toc Toe</h3>
+                        <p>Tic-Tac-Toe is a classic two-player strategy game played on a 3x3 grid. The game is typically played by two players, who take turns marking empty cells in the grid with their respective symbols, usually "X" and "O". The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. If all cells are filled without either player achieving a winning pattern, the game is considered a draw.</p>
+                        <a href="https://tic-tok-toegame.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>
+                            Spotify is a digital music streaming service that provides users with access to a vast library of songs, albums, playlists, podcasts, and other audio content. It was founded in 2006 in Sweden and has since become one of the most popular music streaming platforms worldwide.</p>
+                        <a href="https://spotifyd.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Amazone Clone</h3>
+                        <p>
+                            An Amazon clone is a replica or imitation of the popular e-commerce platform Amazon. It's essentially a digital marketplace that aims to provide similar features and functionalities to the original Amazon website or app</p>
+                        <a href="https://d-amazonclone.netlify.app"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Dk2211685@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8604473124</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Guptadheeraj567"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/dk2211685/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dheeraj-gupta-050632258"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Massage"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
